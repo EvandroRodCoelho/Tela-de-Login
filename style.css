@@ -1,0 +1,314 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins',sans-serif;
+color: black;}
+:root{
+    --cor-1:#768591;
+    --corFonte:white;
+    --cor2:#A8C0CE;
+    
+}
+header{
+        height: 9vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    background-color: var(--cor-1);
+}
+header h1{
+ font-size: 2.5em;
+ color: var(--corFonte);
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(#A8C0CE,#768591);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 2px 3px rgb(0, 0,0.25);
+}
+main form{
+    margin-top: 5%;
+    width: 40%;
+    height: 75vh;
+
+    background-color:var(--cor-1) ;
+    box-shadow: 0px , 3px , 4px rgb(0, 0,0.4)inset 0px,4px ,4px rgb(0, 0,0.25);
+    border-radius: 15px;
+
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+main form .inputs-container {
+    margin-top: 5vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main form .inputs-container input{
+    width: 90%;
+    height: 100%;
+    padding: 8px 15px;
+     border: none;
+     outline: none;
+
+     border-radius: 12px;
+     box-shadow: 0px 3px 3px rgb(0, 0,0.25);
+    transition: 0.2s;     
+}
+main form .inputs-container input:focus{
+    box-shadow: inset 1px 4px 7px rgb(0, 0,0.5);
+    
+}
+main form .inputs-container input:hover{
+    width: 95%;
+}
+
+main form .password-container{
+    margin-top: 5%;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form .password-container i{
+    position: absolute;
+    right: 8%;
+    top:35%;
+    color: #777;
+    cursor: pointer;
+}
+
+main form .password-container #eye{
+    display: none;
+}
+main form .password-infos{
+    width: 90%;
+    margin-top: 3%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.Lembrar_senha{
+    display:flex ;
+    justify-content: center;
+    text-align: center;
+    margin-right: 36px;
+}
+.Lembrar_senha >input{
+    margin-left:5vw ;
+    margin-right: 0.3vw;
+    border-radius: 50%;
+}
+
+main form .password-infos a{
+transition: 0.2s ease-in-out;
+text-decoration: none;
+margin-left: 10%;
+}
+main form .password-infos a:hover{
+ color:var(--corFonte) ;
+}
+main form button{
+    background-color: var(--cor2);
+    width: 95%;
+    height: 30px;
+    margin-left: 1vw;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.4em;
+    margin-top: 10%;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    
+}
+main form button:hover{
+    background-color: white;
+    color: var(--cor-2);
+}
+
+main form .links_containers{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+}
+main form .links_containers span{
+ font-size: 0.8em;
+ font-weight: 600;
+}
+main form .links_containers aside{
+    margin-top: 5%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main form .links_containers aside i{
+    font-size: 1.5em;
+    background-color: white;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10%;
+}
+
+main form .links_containers aside .google {
+ color: #e34133;
+}
+main form .links_containers aside .google:hover {
+    background-color:#e34133 ;
+    color: white;
+}
+main form .links_containers aside .linkedin {
+  color: #0a66ca;
+}
+main form .links_containers aside .linkedin:hover {
+  background-color: #0a66ca;
+  color: white;
+}
+main form .links_containers aside .facebook {
+    color: #14a0f9;
+}
+main form .links_containers aside .facebook:hover{
+ background-color:#14a0f9 ;
+ color: white;
+}
+
+ main form footer{
+     width: 100%;
+     margin-top: 10%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+ main form footer hr{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+ }
+ main form footer span{
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-top: 5%;
+}
+main form footer a{
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 5%;
+}
+main form footer span{
+    font-weight:400;
+    transition: 0.2s ease-in-out;
+}
+main form footer a:hover{
+    color: white;
+}
+@media (max-width:730px) {
+    .Lembrar_senha{
+        display:flex ;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    main form{
+        justify-content: center;
+        font-size: 1.1em;
+    }
+    main form .inputs-container input{
+      margin-top: 10px;
+      margin-bottom: 0.2vh;
+    }
+    main form .password-infos{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+       justify-content: space-between;
+    }
+    main form .password-infos a { 
+        font-size: 0.9rem;
+        text-align:center;
+        margin-top: 5%;
+    }
+    main form .password-infos input{
+        margin-right:7px ;
+        margin-left: -10px;
+      
+    }
+   .lembrar_senha{ 
+        font-size: 0.6rem;
+    }
+    main form .links_containers aside i{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    main form footer span{
+        font-weight: 400;
+        font-size: 0.9em;
+        margin-top: 5%;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    main form footer a{
+     font-weight: 600;
+    }
+}
+
+@media (max-width:450px) {
+    .Lembrar_senha{
+     font-size: 0.9em;
+   
+     
+    
+        display:flex ;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    
+    }
+    main form{
+        height: 60vh;
+        width: 50vw;
+        align-content: center;
+        margin-top: 50px;
+        font-size: 1em;
+    }
+    main form .password-container{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+        
+    }
